@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+    /* header부분 위치조정 */
+    header{
+      overflow: hidden;
+    }
+    header article{
+      margin:0 30px;
+      height:60px;
+    }
+    #logo{
+      float:left;
+    }
+    #basictool{
+      float:right;
+    }
+
+    /* 로고조정 */
+    #logo a{
+      font-size:40px;
+      font-weight: bolder;
+      text-decoration: none;
+      color:gold;
+    }
+    /* 기본정보  */
+    #basictool a{
+      line-height: 60px;
+      text-decoration: none;
+      color: black;
+      margin: 0 5px;
+      transition: 0.2s;
+    }
+    #basictool a:hover{
+      color:gold;
+    }
+
+    /* 메뉴 */
+    nav{
+      clear:both;
+      overflow:hidden;
+      text-align: center;
+      border-top: 1px solid #EDEDED;
+      border-bottom: 1px solid #EDEDED;
+    }
+    nav ul li{
+      float:left;
+      list-style: none;
+      width:25%;
+    }
+    nav ul li a{
+      color:black;
+      font-size: 16px;
+      font-weight: bolder;
+      text-decoration: none;
+      line-height: 50px;
+      transition: 0.2s;
+      position:relative;
+    }
+    nav ul li a:before{
+      content: '';
+      position: absolute;
+      background: gold;
+      height:2px;
+      width:0;
+      bottom:-2px;
+      left:50%;
+      transform: translateX(-50%);
+      transition:0.5s;
+    }
+    nav ul li a:hover{
+      color:gold; 
+    }
+    nav ul li a:hover:before{
+      width:100%;
+    }

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      color: black;
+    }
+/* 화면 서브타이틀 부분 */
+    div.title {
+      height: 100px;
+      background: #EDEDED;
+      text-align: center;
+      line-height: 100px;
+      font-size: 20px;
+    }
+
+    /* contents-wrap-콘텐츠 영역 너비설정 */
+    div.contents-wrap {
+      overflow: hidden;
+      width: 80%;
+      height: auto;
+      margin: auto;
+    }
+
+    section {
+      float: left;
+      width: 80%;
+      height: auto;
+      padding: 30px;
+      border-right: 1px solid#EDEDED;
+      text-align: center;
+    }
+    section p {
+      margin: 20px;
+       font-size: 18px;
+    }
+    .myinfoTool{
+      margin:100px;
+    }
+    section .myinfoTool a{
+      display: block;
+      text-decoration: none;
+      color: black;
+      border: 2px solid gold;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    

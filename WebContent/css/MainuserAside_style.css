@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+ /* 유저 전용 공간 */
+    aside{
+      float:right;
+      width:20%;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* 검색창 */
+    #query{
+      width:90%;
+      box-sizing:border-box;
+      border:2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 10px;
+      margin: 50px auto; 
+    }
+    
+    /* 유저id */
+    .user_id{
+      width:90%;
+      box-sizing:border-box;
+      border:2px solid #ccc;
+      font-size: 16px;
+      padding: 10px;
+      margin: 100px auto; 
+    }
+    .user_id a{
+      text-decoration: none;
+      color:black;
+      transition: 0.2s;
+    }
+    .user_id a:hover{
+      color:gold;
+    }
+    /* 유저 정보 */
+    aside .user_wrap a{
+      text-decoration: none;
+      background: gold;
+      color:rgba(0, 0, 0, 0.68);
+      display:inline-block;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    aside .user_wrap a:hover{
+      background: gold;
+      color:#fff;
+    }
+   

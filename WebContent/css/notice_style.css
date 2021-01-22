@@ -1,0 +1,138 @@
+@charset "UTF-8";
+	* {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      }
+
+    body{
+      font: Arial, Helvetica, sans-serif;
+      font-size:15px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      color: black;
+    }
+ /* contents영역 */
+    div.contents-wrap{
+      overflow: hidden;
+      width:80%;
+      height: auto;
+      margin: auto;
+    }
+
+    section{
+      float:left;
+      width:80%;
+      padding:30px;
+      border-right:1px solid#EDEDED;
+    }
+
+    section article{
+      margin: 40px;
+    }
+
+    /* 글 정렬 필터 */
+    #filter{
+      float:right;
+    }
+
+    /* 게시글영역 */
+    section article table {
+      width:100%;
+      margin-top: 50px;
+      border-collapse: collapse;
+    }
+
+    section article table td,th{
+      height:50px;
+      font-weight: lighter;
+      font-size: 14px;
+      text-align: center;
+      border-bottom: 1px solid#EDEDED;
+      border-top: 1px solid#EDEDED;
+    }
+
+    /* 글제목 너비 조정 */
+    section article table tr td:nth-child(2){
+      width:50%;
+      text-align: left;
+    }
+
+    /* 고정 게시판글 배경색 지정 */
+    .fixed{
+      background: #EDEDED;
+    }
+
+    section article table td a{
+      text-decoration: none;
+      color:black;
+    }
+
+    section article table td a:hover{
+      color:black;
+      text-decoration: underline;
+    }
+
+    /* 페이지매김 */
+    div.pagination_wrap{
+      text-align: center;
+    }
+    div.pagination{
+      margin-top: 30px;
+    }
+
+    div.pagination a{
+      display: inline-block;
+      color:black;
+      font-weight: lighter;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    /* 현재 페이지 표시 */
+    div.pagination a.active{
+      background-color: #ededed;
+    }
+
+    /* 첫페이지에서 왼쪽이동버튼 비활성화 */
+    div.pagination a.disabeld{
+      pointer-events: none;
+    }
+
+    div.pagination a:hover:not(.active):not(.disabled){
+      background-color: #ededed;
+    }
+
+    /* 게시글 검색 */
+    .post_search{
+      display:flex;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .post{
+      margin: 0 3px;
+      height:30px;
+    }
+    
+    .post_search input[type="button"], .write_button{
+      border:none;
+      width:50px;
+      background: gold;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .write_button{
+      text-decoration: none;
+      color:black;
+      display: inline-block;
+      line-height: 30px;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .write_button:hover,.post_search input[type="button"]:hover{
+      color:#fff;
+    }
